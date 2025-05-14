@@ -5,15 +5,21 @@ import java.util.Scanner;
 
 public class PayoffApp {
     public static void main(String[] args) {
-        // CreditCard amex = new CreditCard("American Express", 25, 1300);
-        // // System.out.println(amex.getApr());
 
-        // CreditCard chase = new CreditCard("Chase", 20, 1500);
-        // // System.out.println(chase.getApr());
+        CreditCard discover = new CreditCard("Discover It", 33, 500);
 
-        // // System.out.println(amex.getBalance());
+        CreditCard amex = new CreditCard("American Express", 25, 1300);
 
-        // System.out.println(chase);
+        // System.out.println(amex.monthlyInterest());
+
+        // System.out.println(amex.getApr());
+
+        CreditCard chase = new CreditCard("Chase", 20, 1500);
+        // System.out.println(chase.getApr());
+
+        // System.out.println(amex.getBalance());
+
+        System.out.println(chase);
 
 
         //System.in is a standard input stream that reads data from the keyboard, but here we're using a StringReader, in the file userInput.tx
@@ -52,5 +58,5 @@ public class PayoffApp {
 
 
         scan.close(); //Close the scanner to prevent resource leaks
-    }
+     }
 }
